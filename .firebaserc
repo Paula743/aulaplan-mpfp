@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "aulaplan-mpfp",
+    "aulaplan-mpfp": "aulaplan-mpfp"
+  },
+  "targets": {},
+  "etags": {}
+}

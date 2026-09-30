@@ -1,0 +1,32 @@
+{
+  "name": "aulaplan-mpfp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:web": "npm run dev --workspace apps/web",
+    "generate:web": "npm run generate --workspace apps/web",
+    "typecheck:web": "npm run typecheck --workspace apps/web",
+    "dev:firebase": "firebase emulators:start",
+    "dev": "concurrently -n WEB,FIREBASE -c auto \"npm:dev:web\" \"npm:dev:firebase\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paula743/aulaplan-mpfp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Paula743/aulaplan-mpfp/issues"
+  },
+  "homepage": "https://github.com/Paula743/aulaplan-mpfp#readme",
+  "private": true,
+  "workspaces": [
+    "apps/web"
+  ]
+}
